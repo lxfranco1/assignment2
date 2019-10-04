@@ -1,5 +1,5 @@
 //
-// Created by Esteban Parra on 9/5/19.
+// Created by Alexander Franco on 10/4/19.
 //
 
 #ifndef DRIVINGSIMULATOR_JET_H
@@ -26,4 +26,4 @@ public:
 };
 
 
-#endif //DRIVINGSIMULATOR_CAR_H
+#endif //DRIVINGSIMULATOR_JET_H
