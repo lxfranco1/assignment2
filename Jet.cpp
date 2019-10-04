@@ -3,7 +3,7 @@
 //
 
 #include "Jet.h"
-
+#include <math.h>
 Jet::Jet() {
     setNumberOfEngines(1);
     setBrand("Custom");
@@ -31,10 +31,18 @@ void Jet::setNumberOfEngines(int engines) {
 }
 
 double Jet::mileageEstimate(double time) {
-    double mileage ;
-    return 0;
+  double ran =rand() % 60 + 40;
+  ran =floor(ran);
+    double mileage =time *ran  ;
+    if(getNumberOfEngines()>2){
+        mileage+= ((mileage*.055)*getNumberOfEngines());
+
+    }
+
+    return mileage;
 }
 
 string Jet::toString() {
-    return "-> Jet\n" + PoweredVehicle::toString() ;
-}
+  return "-> Jet\n" + PoweredVehicle::toString() + "\n\tEngine Number: " +
+         std::to_string(getNumberOfEngines());
+       }
