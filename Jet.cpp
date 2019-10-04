@@ -42,7 +42,7 @@ double Jet::mileageEstimate(double time) {
     return mileage;
 }
 
-//to string edited to cats int as a string for cuntionality
+//to string edited to cats int as a string for funtionality
 string Jet::toString() {
   return "-> Jet\n" + PoweredVehicle::toString() + "\n\tEngine Number: " +
          std::to_string(getNumberOfEngines());
