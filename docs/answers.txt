@@ -1,0 +1,82 @@
+(a)
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (4/4), 474 bytes | 474.00 KiB/s, done.
+Total 4 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/lxfranco1/assignment2
+   f1043bc..a592870  master -> master
+(base) wc-dhcp14d183:assignment2 alexanderfranco$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+
+(b)
+10 commits
+Command used:
+git rev-list --count HEAD
+
+(c)
+The .gitignore was last modified Wed Sep 25 18:13:30 2019 -0400
+Command used:
+git log ./.gitignore
+
+
+(d)
+Two reasons why branching is are used in a git repository are because there 
+is no storage or memory overhead associated wiht branches. This, in turn, 
+make it easier to divide up work in a logical manner as opposed to having 
+large branches that could have been divided.
+
+(e)
+The git log command simply displays the commit logs for a specified pathname.
+The git status command, on the other hand, diplays the discrepencies between
+the index file and the current HEAD commit, paths that have differences between 
+the working tree and the index file, and paths in the working tree that are 
+not tracked by Git.
+
+(f)
+git log --folow -- Vehicle.h
+or
+git log -- Vehicle.h
+
+(g)
+git log --grep=file
+
+(h)
+I. Inheritance is a relationship in OOP in which an object acquires some 
+values or properties from another object that precedes it in an inheritance
+hierarchy.
+
+II. Polymorphism is a systems means to process object differently depending
+on their data type. Moreover, it permits a single function to have multiple 
+implementations regardless of object type.
+
+III. Encapsulation in OOP is the principle that data and the methods that work
+on that data should be bundled and stored within one space.
+
+(i)
+The main difference between these two workflow models is that the "Dictator and Lieutenants" model 
+has developers sharing lieatenant repositories to be reviewed before the
+supervising Dictator pushes the changes whereas the the "Integration Manager"
+workflow model has developers creating two repositories for themselves, public
+and private, to then push to the project manager to integrate it into the 
+central repository.
+
+(j)
+The "Dictator and Lietenants" model prioritizes specialization of labor. This 
+means that each developer can focus on achieving their own tasks, while the integration is left up to the 
+lietenants. This allows for a large labor force to be a benefit for the project
+as changes must be funnelled through a system of checks in functionality before being pushed
+as opposed to the "Centralized" model where each developer may makes pushes to the shared repository without 
+reference to the changes being made by their peers.
+
+5.
+The driving simulator utilizes both polymorphism and encapsulation. The polymorphism is evident when
+our main.cpp is observed. The printVehicleRoster function accepts the object Vehicle ** vehicles
+as a parameter, allowing all objects inheriting from vehicle to be used as a paramter in the function.
+The encpsulation of the driving simulator is reflected in each objects classes containing their unique 
+functions, showing that all data is bundled together with the functions that would act on them.
